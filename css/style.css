@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+/*BarraLateral*/
+
+.apresentacao{
+    float: left;
+    width: 300px;
+    height: 600px;
+    background-color: #545061;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    border-radius: 100px;
+    background-color: white;
+    text-decoration: none;
+}
+
+p.descricao{
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+}
+
+/*Fim BarraLateral*/
+
+/*Footer*/
+
+.footer p{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 0px;
+    background-color: #312E38;
+    clear: both;
+    color: white;
+}
+
+.footer.footer{
+    margin-top: 50px;
+}
+
+/*Fim Footer*/
+
+/*Contato Form*/
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .form-contact {
+    width: 100%;
+    font-family: "Arial", Times, serif;
+  }
+  
+  .form-contact-input {
+    margin: 20px;
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+  }
+  
+  .form-contact-textarea {
+    margin: 20px;
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+  }
+  
+  .form-contact-button {
+    margin: 20px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #B22222;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 1s;
+  }
+  
+  .form-contact-button:hover {
+    opacity: 1;
+  }
+
+/*Fim Contato Form*/
+
+body{
+    margin: 0px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #787487;
+}
+
+.cabecalho{
+    background: #2B2931;
+    border-bottom: solid 5px #4faddb;
+    box-sizing: content-box;
+    /* border: solid 1px red; */
+}
+
+.menu-toggle{
+    float: right;
+    color: #eee;
+    background-color: #555;
+    border: solid 1 px #777;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+
+.menu{
+    display: inline-block; /*Alinha horizontalmente os items do menu (item pai)*/
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+    /* border: solid 1px red; */
+}
+
+.menu ul{
+    margin: 0; /*Centraliza os items do menu dentro da box*/
+    padding: 0;/*Centraliza os items do menu dentro da box*/
+    /* border: solid 1px red; */
+}
+
+.menu li{
+    display: inline-block; /*Alinha Horizontalmente os items*/
+}
+
+.cabecalho a{
+    text-decoration: none; /*Tira a formatação do texto padrão*/
+    color: #eee;
+    font-size: 1.3em;
+}
+
+.menu a{
+    padding: 15px; /*Separação entre os elementos do menu*/
+}
+
+.autenticacao{
+    float: right;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu a:hover{
+    border-radius: 30px;
+    background-color: #4faddb;
+    color: #000;
+}
+
+.botao{
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 10px;
+    /* border: solid 1px red; */
+}
+
+.destaque{
+    background-color: #f50a31;
+    color: #fff;
+}
+
+@media (min-width: 679px){
+    .menu-toggle{
+        display: none;
+    }
+}
+
+@media(max-width: 680px){
+    .menu{
+        display: none;
+    }
+}
+
+@media(max-width: 910px){
+    .autenticacao{
+        display: none;
+    }
+}
+
+.conteudo{
+    box-sizing: content-box;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 15px;
+    width: 200px;
+    display: inline-block;
+    background-color: aliceblue;
+}
+
+a img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.438);
+    /* border: solid 1px black; */
+    text-align: center;
+}

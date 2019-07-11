@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div>
+            <button class="menu-toggle">
+                <i class="fa fa-lg fa-bars"></i>
+            </button>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="" art-nav="artesanato.html">Artesanato</a>
+                    </li>
+                    <li>
+                        <a href="" art-nav="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="" art-nav="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <aside class="autenticacao">
+                <a href="#login">Login</a>
+                <a href="#registar" class="botao destaque">Registrar</a>
+            </aside>
+        </div>   
+    </header>
+    <section id="conteudo">    
+
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>Copyright CaioCPS</p>
+        </div>
+    </footer>
+
+    <script>
+            document.querySelectorAll('[art-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+            
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.getAttribute('art-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+
+</html>
